@@ -1,8 +1,10 @@
-package jp.techacademy.taro.kirameki.kotlinlog
+package com.example.kotlinlog
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log   // ここを追加
+import android.util.Log
+import com.example.kotlinlog.R
+// ここを追加
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        Log.d("kotlintest", "ログへの出力テスト")    // ここを追加
+        val human = Human("nana", 20, "piano")
+        human.say()
+        human.think()
+//
+//
     }
 }
